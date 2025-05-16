@@ -39,9 +39,6 @@
             android:id="@+id/action_duration_ToNextQuestion"
             app:destination="@id/intensityFragment" />
 
-<!--        <action-->
-<!--            android:id="@+id/action_durationFragment_to_nextQuestionFragment"-->
-<!--            app:destination="@id/nextQuestionFragment" />-->
     </fragment>
 
     <fragment

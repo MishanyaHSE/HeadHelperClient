@@ -103,7 +103,14 @@ public class LoginFragment extends Fragment {
                 case ERROR:
                     hideLoading();
                     credentialManager.deleteCred();
-                    showError(state.getError());
+                    String error = state.getError();
+                    if (error.equals("401")) {
+                        showError("Неправильный email/пароль, попробуйте еще раз");
+                    } else if (error.equals("422")) {
+                        showError("Некорректный формат email");
+                    } else {
+                        showError(error);
+                    }
                     break;
                 case LOADING:
                     showLoading();

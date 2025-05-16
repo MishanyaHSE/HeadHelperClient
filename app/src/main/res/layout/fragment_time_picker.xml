@@ -5,9 +5,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/default_margin">
 
-    <!-- Вопрос -->
 
-    <!-- Кнопка выбора времени -->
     <TextView
         android:id="@+id/tvQuestion"
         android:layout_width="0dp"
@@ -31,7 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQuestion"/>
 
-    <!-- Выбранное время -->
     <TextView
         android:id="@+id/tvSelectedTime"
         android:layout_width="wrap_content"
@@ -42,23 +39,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSelectTime"/>
 
-    <!-- Кнопки навигации -->
-    <Button
-        android:id="@+id/btnBack"
-        style="@style/ButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/button_height"
-        android:text="@string/back"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/btnNext"
-        style="@style/ButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/button_height"
-        android:text="@string/to_next_page"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/ButtonStyle"
+
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:text="@string/to_next_page" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

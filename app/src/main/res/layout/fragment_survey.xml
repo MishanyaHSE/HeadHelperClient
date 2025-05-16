@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- 1. Время боли -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +35,6 @@
             android:layout_height="1dp"
             android:background="@color/gray_light"/>
 
-        <!-- 2. Интенсивность -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +60,6 @@
             android:layout_height="1dp"
             android:background="@color/gray_light"/>
 
-        <!-- 3. Медикаменты -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -223,7 +220,6 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
-        <!-- Кнопка сохранения -->
         <Button
             android:id="@+id/btnSave"
             style="@style/ButtonStyle"

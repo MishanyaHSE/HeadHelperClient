@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_registerFragment_to_emailVerificationFragment"
             app:destination="@id/emailVerificationFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 
     <fragment
@@ -49,6 +52,10 @@
         <action
             android:id="@+id/action_forgotPassword_to_resetPassword"
             app:destination="@id/resetPasswordFragment" />
+
+        <action
+            android:id="@+id/action_forgotPassword_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 
     <fragment

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:padding="@dimen/default_margin">
 
-    <!-- Guideline для центрирования -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_center"
         android:layout_width="wrap_content"
@@ -14,7 +13,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.3" />
 
-    <!-- Вопрос -->
     <TextView
         android:id="@+id/tvQuestion"
         android:layout_width="0dp"
@@ -24,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline_center" />
 
-    <!-- Кнопка "Да" -->
     <Button
         android:id="@+id/btnYes"
         style="@style/ButtonStyle"
@@ -36,7 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
 
-    <!-- Кнопка "Нет" -->
     <Button
         android:id="@+id/btnNo"
         style="@style/ButtonStyle"

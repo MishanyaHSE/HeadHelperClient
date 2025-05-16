@@ -22,43 +22,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HeadacheDiary"
         tools:targetApi="31">
-        <activity
-            android:name=".presentation.view.other.NinthQuestionActivity"
-            android:exported="false" />
+
         <activity
             android:name=".presentation.view.mainmenu.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name=".presentation.view.other.EighthQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.SeventhQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.SixthQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.RegistrationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.StatisticsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.FifthQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.FourtQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.ThirdQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.SecondQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.other.FirstQuestionActivity"
-            android:exported="false" />
+
         <activity
             android:name=".presentation.view.survey.SurveyActivity"
             android:exported="false"

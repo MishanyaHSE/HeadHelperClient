@@ -5,7 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/calendarFragment">
 
-    <!-- Глобальные действия для нижнего меню -->
     <action
         android:id="@+id/action_global_calendarFragment"
         app:destination="@id/calendarFragment"
@@ -24,7 +23,6 @@
         app:popUpTo="@id/nav_graph"
         app:popUpToInclusive="true" />
 
-    <!-- Calendar Fragment -->
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.headachediary.presentation.view.mainmenu.CalendarFragment"
@@ -35,13 +33,11 @@
             app:destination="@id/reportFragment" />
     </fragment>
 
-    <!-- Report Fragment -->
     <fragment
         android:id="@+id/reportFragment"
         android:name="com.example.headachediary.presentation.view.mainmenu.ReportFragment"
         android:label="Создание отчета" />
 
-    <!-- Profile Fragment -->
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.headachediary.presentation.view.mainmenu.ProfileFragment"
@@ -52,7 +48,6 @@
             app:destination="@id/surveyFragment" />
     </fragment>
 
-    <!-- Survey Fragment -->
     <fragment
         android:id="@+id/surveyFragment"
         android:name="com.example.headachediary.presentation.view.mainmenu.SurveyFragment"
@@ -63,7 +58,6 @@
             app:destination="@id/profileFragment" />
     </fragment>
 
-<!--     Statistics Fragment (заглушка) -->
     <fragment
         android:id="@+id/statisticsFragment"
         android:name="com.example.headachediary.presentation.view.mainmenu.StatisticsFragment"
