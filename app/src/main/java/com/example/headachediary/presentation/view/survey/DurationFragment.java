@@ -28,12 +28,12 @@ public class DurationFragment extends Fragment {
     private NoteCreate note;
     private List<ToggleButton> buttons = new ArrayList<>();
     private String[] durations = {
-            "Менее\nчаса",
-            "1-2\nчаса",
-            "2-4\nчаса",
-            "4-7\nчасов",
-            "7-12\nчасов",
-            "Весь\nдень"
+            "Менее часа",
+            "1-2 часа",
+            "2-4 часа",
+            "4-7 часов",
+            "7-12 часов",
+            "Весь день"
     };
 
     @Override
