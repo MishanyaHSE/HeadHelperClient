@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarFragment">
+
+    <!-- Глобальные действия для нижнего меню -->
+    <action
+        android:id="@+id/action_global_calendarFragment"
+        app:destination="@id/calendarFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_global_profileFragment"
+        app:destination="@id/profileFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_global_statisticsFragment"
+        app:destination="@id/statisticsFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <!-- Calendar Fragment -->
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.headachediary.presentation.view.mainmenu.CalendarFragment"
+        android:label="Календарь">
+
+        <action
+            android:id="@+id/action_calendarFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+
+    <!-- Report Fragment -->
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.headachediary.presentation.view.mainmenu.ReportFragment"
+        android:label="Создание отчета" />
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.headachediary.presentation.view.mainmenu.ProfileFragment"
+        android:label="Профиль">
+
+        <action
+            android:id="@+id/action_profileFragment_to_surveyFragment"
+            app:destination="@id/surveyFragment" />
+    </fragment>
+
+    <!-- Survey Fragment -->
+    <fragment
+        android:id="@+id/surveyFragment"
+        android:name="com.example.headachediary.presentation.view.mainmenu.SurveyFragment"
+        android:label="Опрос">
+
+        <action
+            android:id="@+id/action_surveyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+<!--     Statistics Fragment (заглушка) -->
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.headachediary.presentation.view.mainmenu.StatisticsFragment"
+        android:label="Статистика" />
+
+</navigation>

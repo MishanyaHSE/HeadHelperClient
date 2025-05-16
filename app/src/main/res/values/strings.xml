@@ -1,0 +1,121 @@
+<resources>
+
+    <string name="app_name">HeadacheDiary</string>
+
+    <!--Questions-->
+    <string name="first_question">Болела ли у Вас голова в указанную дату?</string>
+    <string name="second_question">Укажите время начала и окончания\nприступа головной боли:</string>
+    <!--Questions-->
+
+
+
+    <!--General strings-->
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="back">Назад</string>
+    <string name="to_next_page">Далее</string>
+    <string name="to_next_page_skip">Пропустить</string>
+    <!--General strings-->
+
+    <!--MainActivity-->
+    <string name="start_survey">Начать опрос</string>
+    <string name="stat_icon">stat_icon</string>
+    <string name="calendar_icon">calendar_icon</string>
+    <string name="p_icon">p_icon</string>
+    <!--MainActivity-->
+
+
+    <!--SecondActivity-->
+    <string name="start_time">Начало:</string>
+    <string name="end_time">Окончание:</string>
+    <!--SecondActivity-->
+    <string name="email">example@example.com</string>
+    <string name="password">your password</string>
+    <string name="login">Авторизоваться</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="register">Зарегистрироваться</string>
+    <!--FragmentLogin-->
+
+    <!--FragmentLogin-->
+
+    <!--FragmentVerificationCode-->
+    <string name="enter_verification_code">Введите код из письма</string>
+    <string name="verification_code">Код подтверждения</string>
+    <string name="verify">Подтвердить</string>
+    <!--FragmentVerificationCode-->
+
+    <!--FragmentCalendar-->
+    <string name="get_report">Создать отчет</string>
+
+    <!--FragmentCalendar-->
+
+    <string name="time_question">Укажите время начала головной боли:</string>
+    <string name="select_time">Выбрать время</string>
+    <string name="selected_time_format">Выбрано время: %s</string>
+
+    <string name="intensity_question">Оцените интенсивность боли (от 1 до 10):</string>
+
+
+    <string name="pain_type_question">Выберите тип боли</string>
+    <string-array name="pain_types">
+        <item>Пульсирующая</item>
+        <item>Давящая</item>
+        <item>Ноющая</item>
+        <item>Сжимающая</item>
+        <item>Режущая</item>
+        <item>Пронзающая</item>
+        <item>Глубокая</item>
+        <item>Поверхностная</item>
+        <item>Стреляющая</item>
+    </string-array>
+
+    <string name="area_question">Укажите локализацию боли:</string>
+    <string-array name="pain_areas">
+        <item>Вся голова</item>
+        <item>Виски</item>
+        <item>Затылок</item>
+        <item>Шея</item>
+        <item>Лоб</item>
+        <item>Темя</item>
+        <item>Вокруг глаз</item>
+    </string-array>
+
+    <string name="triggers_question">Укажите возможные причины возникновения боли:</string>
+    <string name="medicine_question">Укажите лекарства, которые вы принимали в указанный день</string>
+    <string-array name="triggers">
+        <item>Погода</item>
+        <item>Стресс</item>
+        <item>Проблемы со сном</item>
+        <item>Еда</item>
+        <item>Алкоголь/кофеин</item>
+        <item>Шум</item>
+        <item>Прием лекарств</item>
+        <item>Травма</item>
+    </string-array>
+
+    <string name="symptoms_question">Укажите сопутствующие симптомы, если таковые присутствуют</string>
+    <string-array name="symptoms_list">
+        <item>Головокружение</item>
+        <item>Тошнота</item>
+        <item>Потемнение в глазах</item>
+        <item>Усталость</item>
+        <item>Сонливость</item>
+        <item>Светочувствительность</item>
+        <item>Высокий пульс</item>
+    </string-array>
+
+    <string name="pressure_question">Укажите артериальное давление</string>
+    <string name="morning_pressure">Утреннее</string>
+    <string name="evening_pressure">Вечернее</string>
+    <string name="upper">Верхнее</string>
+    <string name="lower">Нижнее</string>
+
+    <string name="error_pressure_range">Допустимые значения: 50–250</string>
+    <string name="error_required_field">Заполните оба значения</string>
+    <string name="error_number_format">Некорректный формат ввода</string>
+
+    <string name="comment_question">Напишите комментарий, если хотите добавить дополнительную информацию</string>
+    <string name="comment_hint">Введите ваш комментарий здесь…</string>
+    <string name="counter_template">%1$d/256</string>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.STORAGE_PERMISSION_CODE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".data.source.util.HeadacheApplication"
+        android:networkSecurityConfig="@xml/security_config"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HeadacheDiary"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.view.other.NinthQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.mainmenu.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.other.EighthQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.SeventhQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.SixthQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.StatisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.FifthQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.FourtQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.ThirdQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.SecondQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.other.FirstQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.view.survey.SurveyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.auth.AuthActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

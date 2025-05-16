@@ -1,0 +1,74 @@
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.headachediary.presentation.view.auth.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPassword"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.headachediary.presentation.view.auth.RegisterFragment"
+        android:label="RegisterFragment">
+        <action
+            android:id="@+id/action_registerFragment_to_emailVerificationFragment"
+            app:destination="@id/emailVerificationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emailVerificationFragment"
+        android:name="com.example.headachediary.presentation.view.auth.EmailVerificationFragment"
+        android:label="EmailVerificationFragment">
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_verificationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.headachediary.presentation.view.auth.ForgotPasswordFragment"
+        android:label="Забыли пароль">
+
+        <action
+            android:id="@+id/action_surveyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_forgotPassword_to_resetPassword"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.example.headachediary.presentation.view.auth.ResetFragment"
+        android:label="Сброс пароля">
+
+        <action
+            android:id="@+id/action_resetPassword_to_authFragment"
+            app:destination="@id/loginFragment" />
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_calendarFragment_to_reportFragment"
+        app:destination="@id/reportFragment" />
+
+    <action
+        android:id="@+id/action_registerFragment_to_emailVerificationFragment"
+        app:destination="@id/emailVerificationFragment" />
+
+
+</navigation>

@@ -1,0 +1,153 @@
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_survey"
+    app:startDestination="@id/headacheQuestionFragment">
+
+    <fragment
+        android:id="@+id/headacheQuestionFragment"
+        android:name="com.example.headachediary.presentation.view.survey.HeadacheQuestionFragment"
+        android:label="Вопрос 1">
+
+        <action
+            android:id="@+id/action_to_second_question"
+            app:destination="@id/timePickerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/timePickerFragment"
+        android:name="com.example.headachediary.presentation.view.survey.TimeFragment"
+        android:label="Время начала">
+
+        <action
+            android:id="@+id/action_timePickerFragment_to_nextQuestionFragment"
+            app:destination="@id/durationFragment" />
+        <action
+            android:id="@+id/action_timePickerFragment_to_previousQuestionFragment"
+            app:destination="@id/headacheQuestionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/durationFragment"
+        android:name="com.example.headachediary.presentation.view.survey.DurationFragment"
+        android:label="Продолжительность">
+        <action
+            android:id="@+id/action_to_second_question"
+            app:destination="@id/timePickerFragment" />
+
+        <action
+            android:id="@+id/action_duration_ToNextQuestion"
+            app:destination="@id/intensityFragment" />
+
+<!--        <action-->
+<!--            android:id="@+id/action_durationFragment_to_nextQuestionFragment"-->
+<!--            app:destination="@id/nextQuestionFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/intensityFragment"
+        android:name="com.example.headachediary.presentation.view.survey.IntensityFragment"
+        android:label="Интенсивность">
+        <action
+            android:id="@+id/action_intensityFragment_to_nextFragment"
+            app:destination="@id/paintTypeFragment" />
+
+        <action
+            android:id="@+id/action_intensityFragment_to_previousFragment"
+            app:destination="@id/durationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paintTypeFragment"
+        android:name="com.example.headachediary.presentation.view.survey.PainTypeFragment"
+        android:label="Тип боли">
+        <action
+            android:id="@+id/action_painTypeFragment_to_nextFragment"
+            app:destination="@id/areaFragment" />
+
+        <action
+            android:id="@+id/action_painTypeFragment_to_previousFragment"
+            app:destination="@id/intensityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/areaFragment"
+        android:name="com.example.headachediary.presentation.view.survey.AreaFragment"
+        android:label="Область">
+        <action
+            android:id="@+id/action_areaFragment_to_nextFragment"
+            app:destination="@id/triggersFragment" />
+
+        <action
+            android:id="@+id/action_areaFragment_to_previousFragment"
+            app:destination="@id/paintTypeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/triggersFragment"
+        android:name="com.example.headachediary.presentation.view.survey.TriggersFragment"
+        android:label="Триггеры">
+        <action
+            android:id="@+id/action_triggerFragment_to_nextFragment"
+            app:destination="@id/medicineFragment" />
+
+        <action
+            android:id="@+id/action_triggerFragment_to_previousFragment"
+            app:destination="@id/areaFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.example.headachediary.presentation.view.survey.MedicineFragment"
+        android:label="Медикаменты">
+        <action
+            android:id="@+id/action_medicineFragment_to_nextFragment"
+            app:destination="@id/symptomsFragment" />
+
+        <action
+            android:id="@+id/action_medicineFragment_to_previousFragment"
+            app:destination="@id/triggersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="com.example.headachediary.presentation.view.survey.SymptomsFragment"
+        android:label="Симптомы">
+        <action
+            android:id="@+id/action_symptomsFragment_to_nextFragment"
+            app:destination="@id/pressureFragment"/>
+        <action
+            android:id="@+id/action_symptomsFragment_to_previousFragment"
+            app:destination="@id/medicineFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/pressureFragment"
+        android:name="com.example.headachediary.presentation.view.survey.PressureFragment"
+        android:label="Артериальное давление">
+
+        <action
+            android:id="@+id/action_pressureFragment_to_nextFragment"
+            app:destination="@id/commentFragment"/>
+
+        <action
+            android:id="@+id/action_pressureFragment_to_previousFragment"
+            app:destination="@id/symptomsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.headachediary.presentation.view.survey.CommentFragment"
+        android:label="Комментарий">
+
+
+        <action
+            android:id="@+id/action_commentFragment_to_previousFragment"
+            app:destination="@id/pressureFragment"/>
+    </fragment>
+
+
+    <!-- Добавьте другие фрагменты опроса здесь -->
+
+</navigation>

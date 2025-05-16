@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние: кнопка выбрана -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/blue" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/control_highlight" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Состояние: кнопка не выбрана -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/gray" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</selector>

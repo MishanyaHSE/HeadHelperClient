@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HeadacheDiary" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="BottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconSize">@dimen/bottom_nav_icon_size</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavText</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavText</item>
+        <item name="android:textColorSecondary">@color/gray</item> <!-- Цвет неактивных элементов -->
+    </style>
+
+    <style name="BottomNavText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/bottom_nav_text_size</item>
+    </style>
+
+
+
+    <style name="Theme.HeadacheDiary" parent="Base.Theme.HeadacheDiary" />
+</resources>

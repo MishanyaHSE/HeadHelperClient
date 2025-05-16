@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/blue</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+    </style>
+
+    <style name="BottomNavTextActive" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="BottomNavTextInactive" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ActiveText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="InactiveText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ButtonStyle.Danger" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/error</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+
+    <style name="SimpleSwitch" parent="Theme.MaterialComponents.Light">
+        <item name="colorControlActivated">@color/purple_500</item>
+        <item name="colorSurface">@color/gray_light</item>
+    </style>
+
+    <style name="DurationButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/button_duration_selector</item>
+        <item name="android:textColor">@drawable/text_duration_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+
+    <style name="PainTypeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:background">@drawable/button_duration_selector</item>
+        <item name="android:textColor">@drawable/text_duration_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="PressureInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorEnabled">true</item>
+        <item name="errorTextColor">@color/error</item>
+        <item name="boxStrokeErrorColor">@color/error</item>
+        <item name="hintTextColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="CounterText" parent="TextAppearance.Design.Counter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+
+</resources>
